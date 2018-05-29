@@ -1,0 +1,34 @@
+/**
+ * \file Porte.cpp
+ * \brief Ce fichier contient une implantation des méthodes de la classe Porte
+ * \author Étudiant(e)
+ * \version 0.1
+ * \date juin 2018
+ *
+ */
+
+#include "Labyrinthe.h"
+#include "Porte.h"
+#include "Piece.h"
+
+namespace TP1
+{
+
+    Porte::Porte()
+    {
+    }
+
+	//Constructeur, en argument la couleur de la porte ainsi que la pièce de destination
+	Porte(Couleur c, Piece * d):
+    color(c), destination(d)
+    {
+
+    }
+
+
+
+    Porte::~Porte()
+    {
+    }
+
+}

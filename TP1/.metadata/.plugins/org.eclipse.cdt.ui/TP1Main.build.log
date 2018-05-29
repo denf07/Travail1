@@ -1,0 +1,39 @@
+12:32:55 **** Incremental Build of configuration Debug for project TP1Main ****
+make all 
+Building file: ../Principal.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/home/etudiant/Bureau/TP1/TP1Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Principal.d" -MT"Principal.o" -o "Principal.o" "../Principal.cpp"
+Finished building: ../Principal.cpp
+ 
+Building target: TP1Main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Lib/Debug" -o "TP1Main"  ./Principal.o   -lTP1Lib
+./Principal.o : Dans la fonction « main » :
+/home/etudiant/Bureau/TP1/TP1Main/Debug/../Principal.cpp:21 : référence indéfinie vers « TP1::Labyrinthe::Labyrinthe() »
+/home/etudiant/Bureau/TP1/TP1Main/Debug/../Principal.cpp:69 : référence indéfinie vers « TP1::Labyrinthe::solutionner(TP1::Couleur) »
+/home/etudiant/Bureau/TP1/TP1Main/Debug/../Principal.cpp:71 : référence indéfinie vers « TP1::Labyrinthe::solutionner(TP1::Couleur) »
+/home/etudiant/Bureau/TP1/TP1Main/Debug/../Principal.cpp:73 : référence indéfinie vers « TP1::Labyrinthe::solutionner(TP1::Couleur) »
+/home/etudiant/Bureau/TP1/TP1Main/Debug/../Principal.cpp:75 : référence indéfinie vers « TP1::Labyrinthe::solutionner(TP1::Couleur) »
+/home/etudiant/Bureau/TP1/TP1Main/Debug/../Principal.cpp:77 : référence indéfinie vers « TP1::Labyrinthe::trouveGagnant() »
+/home/etudiant/Bureau/TP1/TP1Main/Debug/../Principal.cpp:23 : référence indéfinie vers « TP1::Labyrinthe::~Labyrinthe() »
+/home/etudiant/Bureau/TP1/TP1Main/Debug/../Principal.cpp:21 : référence indéfinie vers « TP1::Labyrinthe::~Labyrinthe() »
+makefile:44 : la recette pour la cible « TP1Main » a échouée
+/home/etudiant/Bureau/TP1/TP1Lib/Debug/libTP1Lib.a(Labyrinthe.o) : Dans la fonction « TP1::Labyrinthe::chargeLabyrinthe(TP1::Couleur, std::basic_ifstream<char, std::char_traits<char> >&) » :
+/home/etudiant/Bureau/TP1/TP1Lib/Debug/../Labyrinthe.cpp:51 : référence indéfinie vers « TP1::Piece::Piece(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) »
+/home/etudiant/Bureau/TP1/TP1Lib/Debug/../Labyrinthe.cpp:65 : référence indéfinie vers « TP1::Labyrinthe::placeDepart(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) »
+/home/etudiant/Bureau/TP1/TP1Lib/Debug/../Labyrinthe.cpp:74 : référence indéfinie vers « TP1::Labyrinthe::placeArrivee(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) »
+/home/etudiant/Bureau/TP1/TP1Lib/Debug/../Labyrinthe.cpp:105 : référence indéfinie vers « TP1::Labyrinthe::placeDepart(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) »
+/home/etudiant/Bureau/TP1/TP1Lib/Debug/../Labyrinthe.cpp:115 : référence indéfinie vers « TP1::Labyrinthe::placeArrivee(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) »
+/home/etudiant/Bureau/TP1/TP1Lib/Debug/../Labyrinthe.cpp:139 : référence indéfinie vers « TP1::Labyrinthe::placeDepart(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) »
+/home/etudiant/Bureau/TP1/TP1Lib/Debug/../Labyrinthe.cpp:149 : référence indéfinie vers « TP1::Labyrinthe::placeArrivee(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) »
+/home/etudiant/Bureau/TP1/TP1Lib/Debug/libTP1Lib.a(Labyrinthe.o) : Dans la fonction « TP1::Labyrinthe::ajoutePassage(TP1::Couleur, int, int, int, int) » :
+/home/etudiant/Bureau/TP1/TP1Lib/Debug/../Labyrinthe.cpp:182 : référence indéfinie vers « TP1::Labyrinthe::trouvePiece(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const »
+/home/etudiant/Bureau/TP1/TP1Lib/Debug/../Labyrinthe.cpp:183 : référence indéfinie vers « TP1::Labyrinthe::trouvePiece(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const »
+/home/etudiant/Bureau/TP1/TP1Lib/Debug/../Labyrinthe.cpp:187 : référence indéfinie vers « TP1::Piece::ajoutePorte(TP1::Porte const&) »
+/home/etudiant/Bureau/TP1/TP1Lib/Debug/libTP1Lib.a(Labyrinthe.o) : Dans la fonction « TP1::Labyrinthe::ajoutePieceLabyrinthe(TP1::Piece const&) » :
+/home/etudiant/Bureau/TP1/TP1Lib/Debug/../Labyrinthe.cpp:207 : référence indéfinie vers « TP1::Labyrinthe::appartient(TP1::Piece const&) const »
+collect2: error: ld returned 1 exit status
+make: *** [TP1Main] Erreur 1
+
+12:32:56 Build Finished (took 417ms)
+

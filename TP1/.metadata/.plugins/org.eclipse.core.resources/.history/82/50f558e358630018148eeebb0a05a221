@@ -1,0 +1,59 @@
+/**
+ * \file Porte.cpp
+ * \brief Ce fichier contient une implantation des méthodes de la classe Porte
+ * \author Étudiant(e)
+ * \version 0.1
+ * \date juin 2018
+ *
+ */
+
+#include "Labyrinthe.h"
+#include "Porte.h"
+#include "Piece.h"
+
+namespace TP1
+{
+
+    Porte::Porte()
+    {
+    }
+
+    //Constructeur, en argument la couleur de la porte ainsi que la pièce de destination
+    Porte::Porte(Couleur c, Piece * d):color(c), destination(d)
+    {
+    	getCouleur() = color;
+    	Piece.getDestination() = destination;
+    }
+
+	//Constructeur de copie
+	Porte::Porte(const Porte&)
+	{
+
+	}
+
+	//un destructeur qui ne fera rien
+    Porte::~Porte()
+    {
+    }
+
+	//Surcharge de l'opérateur =
+	const Porte::Porte& operator =(const Porte& source)
+	{
+        color = source.color;
+        Piece.(*destination) = source.destination;
+        return (*this);
+	}
+
+
+	//accesseur de la couleur d'une porte
+	Couleur Porte::getCouleur() const
+	{
+		return color;
+	}
+
+	//Accesseur de la piece de destination
+	Piece Porte::getDestination() const
+	{
+		 return Piece * destination;
+	}
+}

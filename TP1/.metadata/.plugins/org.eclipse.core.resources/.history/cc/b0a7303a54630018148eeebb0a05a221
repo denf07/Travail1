@@ -1,0 +1,71 @@
+/**
+ * \file Piece.cpp
+ * \brief Ce fichier contient une implantation des méthodes de la classe Piece
+ * \author Étudiant(e)
+ * \version 0.1
+ * \date juin 2018
+ *
+ */
+
+#include "Labyrinthe.h"
+#include "Porte.h"
+#include "Piece.h"
+
+
+using namespace std;
+
+namespace TP1
+{
+	//constructeur par défaut
+    Piece::Piece()
+    {
+    	getNom() = nom;
+    	list<Porte> portes;
+    	parcourue = false;
+    	distanceDuDebut = 0;
+    }
+
+    //constructeur de copie
+    Piece::Piece(const std::string & s)
+    {
+    	getNom() = s.getNom();
+    }
+
+    Piece::~Piece()
+    {
+    }
+
+    const Piece& Piece::operator =(const Piece& source)
+    {
+        nom = source.nom;
+    }
+
+    string Piece::getNom() const
+    {
+        return nom;
+    }
+
+    void Piece::setParcourue(bool p)
+    {
+    	p = false;
+    }
+
+
+    void Piece::setDistanceDuDebut(int d)
+    {
+        distanceDuDebut = d;
+    }
+
+    bool Piece::getParcourue() const
+    {
+        return parcourue;
+    }
+
+    int Piece::getDistanceDuDebut() const
+    {
+        return distanceDuDebut;
+    }
+
+
+
+}
